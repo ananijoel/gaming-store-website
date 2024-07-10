@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: robo;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5; 
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 100vw;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.navs{
+    display: flex;
+    flex-direction: row;
+}
+.nav{
+    padding: 0 20px;
+    margin: 0 5px;
+}
+.nav:hover{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.log:hover{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    /*border: 2px solid black     ;*/
+}
+/*
+.container *{
+    border: 1px solid black;
+}
+    */
+.pictures{
+    width: 100px;
+    height: 100%;
+}
+.main-picture{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+.image{
+    width: 100%;
+    height: fit-content;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 100%;
+    height: auto;
+}
+.informations{
+    width: 564px;
+    height: 100%;
+    margin-left: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 2px solid #2980b9;
+}
+.informations *{
+    padding: 10px 0;
+}
+.nom{
+    color: #2980b9;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.creation{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 0;
+    color: rgb(24, 24, 24);
+}
+.creation span{
+    color: rgb(112, 112, 112);
+    font-weight: 500px;
+}
+.description{
+    font-size: 13px;
+    color: grey;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.categorie{
+    display: flex;
+    flex-direction: column;
+}
+.type{
+    display: flex;
+    flex-direction: row;
+}
+.type div{
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 400;
+    color: gray;
+
+}
+
+.quantite{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 0;
+    color: rgb(24, 24, 24);
+}
+.quantite span{
+    color: rgb(112, 112, 112);
+    font-weight: 500px;
+}
+.quantite input{
+    all: unset;
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-bottom: 2px solid #2980b9;
+    color: gray;
+}
+
+.prix{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 0;
+    color: rgb(24, 24, 24);
+}
+.prix span{
+    color: rgb(112, 112, 112);
+    font-weight: 500px;
+}
+.button {
+    color: white;
+    background-color: #27ae60;
+    width: fit-content;
+    padding: 15px;
+    text-decoration: none   ;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
