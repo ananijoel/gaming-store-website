@@ -10,7 +10,6 @@ let alltypes = ''
 let options = document.querySelectorAll('.buttonOption')
 let pictures = document.querySelectorAll('.img')
 let mainPicture = document.querySelector('.image img')
-let purchase = document.querySelector('.button')
 mainPicture.setAttribute('src', document.querySelector('.img.active').getAttribute('src'))
 function convertirDate(dateString) {
     // Créer un objet Date à partir de la chaîne de caractères
@@ -59,9 +58,8 @@ fetch("https://node-game-store-api-e25abde5221a.herokuapp.com/api/Item/45", {
 
     // Ajouter un écouteur d'événement pour la mise à jour de la quantité
     quantite.addEventListener('input', updatePrixTotal);
-    purchase.addEventListener('click', (e)=>{
-        purchase.setAttribute('href',`https://wa.me/70076829?text= ${item.name} ${item.price} ${quantite.value} ${prixTotale} ${document.querySelector('.button.active').innerHTML}`)
-    })
+    button.setAttribute('href',`https://wa.me/70076829?text= ${item.name} ${item.price} ${quantite.value} ${prixTotale} ${document.querySelector('.button.active').innerHTML}`)
+    
 })
 .catch(error => console.error('Error:', error));
 
