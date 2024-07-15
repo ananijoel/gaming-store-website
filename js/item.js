@@ -8,6 +8,7 @@ let prix = document.querySelector('.prix p:nth-child(2)');
 let button = document.querySelector('.button');
 let alltypes = ''
 let options = document.querySelectorAll('.buttonOption')
+document.querySelector('.boutique').classList.add('active')
 let pictures = document.querySelectorAll('.img')
 let mainPicture = document.querySelector('.image img')
 mainPicture.setAttribute('src', document.querySelector('.img.active').getAttribute('src'))
@@ -58,7 +59,7 @@ fetch("https://node-game-store-api-e25abde5221a.herokuapp.com/api/Item/45", {
 
     // Ajouter un écouteur d'événement pour la mise à jour de la quantité
     quantite.addEventListener('input', updatePrixTotal);
-    button.setAttribute('href',`https://wa.me/70076829?text= ${item.name} ${item.price} ${quantite.value} ${prixTotale} ${document.querySelector('.button.active').innerHTML}`)
+    button.setAttribute('href',`https://wa.me/70076829?text= ${item.name} ${item.price} ${quantite.value} ${prixTotale} ${document.querySelector('.buttonOption.active').innerText} ${window.location.href}`)
     
 })
 .catch(error => console.error('Error:', error));
