@@ -32,7 +32,7 @@ function convertirDate(dateString) {
     return `${jour} ${moisNom} ${annee}`;
 }
 
-fetch("http://localhost:3000/api/Item/4", {
+fetch("https://node-game-store-api-e25abde5221a.herokuapp.com/api/Item/45", {
     method: 'GET',
     headers: {
         "Accept": "application/json",
